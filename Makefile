@@ -2,8 +2,8 @@
 
 # General Variables
 date=$(shell date +'%y.%m.%d.%H.%M')
-project := Circulor mk docs
-container := circulor-mk-docs
+project := Circulor mkdocs
+container := circulor-mkdocs
 docker-filecheck := /.dockerenv
 docker-warning := ""
 RED=\033[0;31m
