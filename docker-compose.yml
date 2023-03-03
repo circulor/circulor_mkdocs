@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  circulor-mk-docs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - "${PWD}/src:/docs"
+    ports:
+      - 8001:8000

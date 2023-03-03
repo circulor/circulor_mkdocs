@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+./.aws
+
+
+# Local
+src/**/*.plan
+src/dist/

@@ -1,0 +1,26 @@
+site_name: Sample
+site_url: https://yads.circulor.io/
+
+repo_url: https://dev.azure.com/Circulor/DVA/_git/dva_api
+repo_name: DVA/dva_api
+
+nav:
+    - Home: index.md
+
+theme: 
+  name: material    
+  features:
+    - navigation.tabs
+
+site_dir: ./dist/docs
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
+  - glightbox
+
+extra:
+  homepage: https://yads.circulor.io/
+  
