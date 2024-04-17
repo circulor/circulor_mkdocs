@@ -1,3 +1,7 @@
+[![ECR release](https://img.shields.io/badge/ECR-circulor_mkdocs-green)](https://gallery.ecr.aws/circulor/circulor_mkdocs)
+[![Github release](https://img.shields.io/github/v/release/circulor/circulor_mkdocs)](https://github.com/circulor/circulor_mkdocs/releases)
+[![GitHub](https://img.shields.io/github/license/circulor/circulor_mkdocs)](https://github.com/circulor/circulor_mkdocs?tab=MIT-1-ov-file#readme)
+
 # Circulor mk docs
 
 Contains a version of squidfunk/mkdocs-material docker container with additional plugins.
