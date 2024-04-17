@@ -13,7 +13,7 @@ versionPrefix := 0.1
 version := $(versionPrefix).$(shell git rev-list HEAD --count)
 shorthash := $(shell git rev-parse --short=8 HEAD)
 version-suffix := ''
-registry := public.ecr.aws/n3x3n4v5/circulor_mkdocs
+registry := public.ecr.aws/circulor/circulor_mkdocs
 
 ifdef GITHUB_BASE_REF
 	current-branch :=  $(patsubst refs/heads/%,%,${GITHUB_HEAD_REF})
@@ -52,7 +52,8 @@ help:
 	@echo " - Everything               : make docker-login docker-build docker-push"
 
 
-docker-login: 
+docker-login:
+	@docker logout $(registry)
 	@echo "Login to AWS ecr ${GREEN}$(registry)${NC}"
 	@aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $(registry)
 
