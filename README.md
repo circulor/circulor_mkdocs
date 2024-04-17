@@ -15,6 +15,17 @@ export ENV=local
 docker-compose build && docker-compose up
 ```
 
+## Release a new version
+
+From the main branch.
+
+```bash
+make  docker-build docker-login docker-push
+```
+
+Don't forget to add a release tag.
+
+
 ## How to use the image
 
 To test the wrapper please supply the required environment variables
