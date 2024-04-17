@@ -2,7 +2,8 @@ FROM squidfunk/mkdocs-material:latest
 
 RUN pip install --no-cache-dir \
     mkdocs-git-revision-date-localized-plugin \
-    mkdocs-glightbox
+    mkdocs-glightbox \
+    mkdocs-render-swagger-plugin
 
 EXPOSE 8000
 WORKDIR /docs
