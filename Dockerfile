@@ -3,7 +3,9 @@ FROM squidfunk/mkdocs-material:latest
 RUN pip install --no-cache-dir \
     mkdocs-git-revision-date-localized-plugin \
     mkdocs-glightbox \
-    mkdocs-render-swagger-plugin
+    mkdocs-render-swagger-plugin \
+    mdx_truly_sane_lists \
+    markdown-callouts
 
 EXPOSE 8000
 WORKDIR /docs
