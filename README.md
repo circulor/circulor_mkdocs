@@ -17,10 +17,14 @@ docker-compose build && docker-compose up
 
 ## Release a new version
 
-From the main branch.
+We have a github action will build the docker image to test it but I remove the automation to deploy it. Because reasons.
+
+So to release a new version do all the steps and then once the change is on the main.
 
 ```bash
 make  docker-build docker-login docker-push
+## if login breaks with "The stub received bad data" then you need to disable credstore https://stackoverflow.com/questions/60807697/docker-login-error-storing-credentials-the-stub-received-bad-data
+## nano ~/.docker/config.json
 ```
 
 Don't forget to add a release tag.
