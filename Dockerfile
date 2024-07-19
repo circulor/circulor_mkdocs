@@ -5,7 +5,8 @@ RUN pip install --no-cache-dir \
     mkdocs-glightbox \
     mkdocs-render-swagger-plugin \
     mdx_truly_sane_lists \
-    markdown-callouts
+    markdown-callouts \
+    mkdocs-git-authors-plugin
 
 EXPOSE 8000
 WORKDIR /docs
