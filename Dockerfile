@@ -6,7 +6,8 @@ RUN pip install --no-cache-dir \
     mkdocs-render-swagger-plugin \
     mdx_truly_sane_lists \
     markdown-callouts \
-    mkdocs-git-authors-plugin
+    mkdocs-git-authors-plugin \
+    neoteroi-mkdocs
 
 EXPOSE 8000
 WORKDIR /docs

@@ -13,6 +13,7 @@ To test the wrapper please supply the required environment variables
 ```bash
 export ENV=local
 docker-compose build && docker-compose up
+# see http://127.0.0.1:8001/
 ```
 
 ## Release a new version
